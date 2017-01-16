@@ -71,15 +71,21 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\t2ladmin\Desktop\fadeRelease_v1.37\fadeRelease\include_fade2d;..\..\library\OpenCV\opencv\build\include;C:\XIMEA\API;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\t2ladmin\Desktop\fadeRelease_v1.37\fadeRelease\include_fade2d;..\..\library\OpenCV\opencv\build\include;C:\XIMEA\API;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\t2ladmin\Desktop\fadeRelease_v1.37\fadeRelease\x64;..\..\library\OpenCV\opencv\build\x64\vc14\lib;C:\XIMEA\API\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\t2ladmin\Desktop\fadeRelease_v1.37\fadeRelease\include_fade2d;..\..\library\OpenCV\opencv\build\include;C:\XIMEA\API;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\t2ladmin\Desktop\fadeRelease_v1.37\fadeRelease\include_fade2d;..\..\library\OpenCV\opencv\build\include;C:\XIMEA\API;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\t2ladmin\Desktop\fadeRelease_v1.37\fadeRelease\x64;..\..\library\OpenCV\opencv\build\x64\vc14\lib;C:\XIMEA\API\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -146,6 +152,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Geo\Geo\make_point.cpp" />
+    <ClCompile Include="..\..\Geo\Geo\ply.cpp" />
+    <ClCompile Include="draw_thread.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="pnp_track_thread.cpp" />
+    <ClCompile Include="recognition.cpp" />
+    <ClCompile Include="recognition_debug.cpp" />
+    <ClCompile Include="recognition_thread.cpp" />
+    <ClCompile Include="tracking_thread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Geo\Geo\make_point.hpp" />
+    <ClInclude Include="..\..\Geo\Geo\ply.hpp" />
+    <ClInclude Include="..\..\Geo\Geo\vector.hpp" />
+    <ClInclude Include="capture_class.hpp" />
+    <ClInclude Include="capture_thread.hpp" />
+    <ClInclude Include="draw_thread.hpp" />
+    <ClInclude Include="findMarker.hpp" />
+    <ClInclude Include="interval_timer.hpp" />
+    <ClInclude Include="meta_programming.hpp" />
+    <ClInclude Include="pnp_track_thread.hpp" />
+    <ClInclude Include="recognition.hpp" />
+    <ClInclude Include="recognition_thread.hpp" />
+    <ClInclude Include="ring_buffer.hpp" />
+    <ClInclude Include="tracking_data.hpp" />
+    <ClInclude Include="tracking_thread.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
